@@ -11,6 +11,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import net.iessochoa.diegovalencia.repositorioexamenmovil.otros.AppChuletaSergio
+import net.iessochoa.diegovalencia.repositorioexamenmovil.tarjetasjuegos.MainScreen
+import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.Ejercicio3
+import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.PizzaDisplay
+import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.SliderColores
 import net.iessochoa.diegovalencia.repositorioexamenmovil.ui.theme.RepositorioExamenMovilTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,10 +25,23 @@ class MainActivity : ComponentActivity() {
         setContent {
             RepositorioExamenMovilTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-
+                    App(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
 
+@Composable
+fun App(
+    modifier: Modifier = Modifier
+){
+    // Tema 5
+    //PizzaDisplay() // Ejercicio 1 - Checks con imagenes y precio que cambia
+    //SliderColores() // Ejercicio 2 - Sliders con color de fondo
+    //Ejercicio3() // Ejercicio 3 - Desplegable que cambia entre ejercicios
+
+    // Otros
+    //MainScreen() // Cartas de videojuegos con rating
+    AppChuletaSergio("Chuleta Sergio") // Wombo combo de sergio
+}
