@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import net.iessochoa.diegovalencia.repositorioexamenmovil.listasscrolleables.AffirmationsApp
 import net.iessochoa.diegovalencia.repositorioexamenmovil.otros.AppChuletaSergio
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tarjetasjuegos.MainScreen
+import net.iessochoa.diegovalencia.repositorioexamenmovil.tarjetaspokemonpropio.composables.DisplayCards
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.Ejercicio3
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.PizzaDisplay
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.SliderColores
@@ -45,5 +46,6 @@ fun App(
     // Otros
     //MainScreen() // Cartas de videojuegos con rating
     //AppChuletaSergio("Chuleta Sergio") // Wombo combo de sergio
-    AffirmationsApp()
+    //AffirmationsApp()
+    DisplayCards()
 }

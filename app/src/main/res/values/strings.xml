@@ -15,6 +15,13 @@
     </string-array>
 
 
+    <string-array name="pokemons">
+        <item>Turtwig</item>
+        <item>Regigigas</item>
+        <item>Golurk</item>
+    </string-array>
+
+
     <string name="title">Calculadora</string>
     <string name="result_title">Resultado:</string>
     <string name="label_input_field_1">Número 1</string>
