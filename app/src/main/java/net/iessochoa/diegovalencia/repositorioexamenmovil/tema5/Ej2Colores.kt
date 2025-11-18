@@ -60,6 +60,7 @@ fun SliderColores(modifier: Modifier = Modifier) {
             Slider(
                 value = red,
                 onValueChange = onRedChange,
+                // Se le debe añadir la misma cantidad de pasos para que funcione bien
                 valueRange = 0f..255f,
             )
 

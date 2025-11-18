@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import net.iessochoa.diegovalencia.repositorioexamenmovil.listasscrolleables.AffirmationsApp
 import net.iessochoa.diegovalencia.repositorioexamenmovil.otros.AppChuletaSergio
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tarjetasjuegos.MainScreen
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.Ejercicio3
@@ -43,5 +44,6 @@ fun App(
 
     // Otros
     //MainScreen() // Cartas de videojuegos con rating
-    AppChuletaSergio("Chuleta Sergio") // Wombo combo de sergio
+    //AppChuletaSergio("Chuleta Sergio") // Wombo combo de sergio
+    AffirmationsApp()
 }

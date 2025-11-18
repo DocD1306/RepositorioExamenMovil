@@ -35,6 +35,7 @@ fun PizzaDisplay(modifier: Modifier = Modifier){
     var ingredientesR by remember { mutableStateOf(listOf<String>()) }
 
     val onIngredienteChange: (String, Boolean) -> Unit = { ingredientName, isChecked ->
+        // Esto crea una nueva lista en ingredientesR con el contenido previo más o menos el ingrediente
         ingredientesR = if (isChecked) {
             ingredientesR + ingredientName
         } else {
