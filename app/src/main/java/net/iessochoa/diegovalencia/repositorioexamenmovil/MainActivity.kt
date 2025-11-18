@@ -46,6 +46,6 @@ fun App(
     // Otros
     //MainScreen() // Cartas de videojuegos con rating
     //AppChuletaSergio("Chuleta Sergio") // Wombo combo de sergio
-    //AffirmationsApp()
-    DisplayCards()
+    //AffirmationsApp() // Afirmaciones google
+    DisplayCards() // Cartas pokemon Diego
 }
