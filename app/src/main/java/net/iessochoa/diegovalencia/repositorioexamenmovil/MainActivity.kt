@@ -15,6 +15,8 @@ import net.iessochoa.diegovalencia.repositorioexamenmovil.listasscrolleables.Aff
 import net.iessochoa.diegovalencia.repositorioexamenmovil.otros.AppChuletaSergio
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tarjetasjuegos.MainScreen
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tarjetaspokemonpropio.composables.DisplayCards
+import net.iessochoa.diegovalencia.repositorioexamenmovil.tema4.CalculadoraDisplay
+import net.iessochoa.diegovalencia.repositorioexamenmovil.tema4.TipTimeLayout
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.Ejercicio3
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.PizzaDisplay
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.SliderColores
@@ -38,6 +40,10 @@ class MainActivity : ComponentActivity() {
 fun App(
     modifier: Modifier = Modifier
 ){
+    // Tema 4
+    TipTimeLayout() // Ejercicio1 - Calculador de propina
+    //CalculadoraDisplay() // Ejercicio 3 - Calculadora con iconos
+
     // Tema 5
     //PizzaDisplay() // Ejercicio 1 - Checks con imagenes y precio que cambia
     //SliderColores() // Ejercicio 2 - Sliders con color de fondo
@@ -47,5 +53,5 @@ fun App(
     //MainScreen() // Cartas de videojuegos con rating
     //AppChuletaSergio("Chuleta Sergio") // Wombo combo de sergio
     //AffirmationsApp() // Afirmaciones google
-    DisplayCards() // Cartas pokemon Diego
+    //DisplayCards() // Cartas pokemon Diego
 }
