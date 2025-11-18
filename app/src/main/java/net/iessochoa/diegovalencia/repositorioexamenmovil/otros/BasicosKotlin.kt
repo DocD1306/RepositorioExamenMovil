@@ -84,4 +84,103 @@ val user = User(1, "Alice")
 println(user)
 println(Dog().sound())
 
+// --- Type inference & smart casting ---
+fun describe(obj: Any) {
+    if (obj is String) {
+        println("Length: ${obj.length}") // smart cast
+    } else if (obj is Int) {
+        println("Squared: ${obj * obj}")
+    }
+}
+
+// --- Sealed class hierarchy ---
+sealed class Shape
+data class Circle(val radius: Double) : Shape()
+data class Rectangle(val w: Double, val h: Double) : Shape()
+object Unknown : Shape()
+
+fun area(shape: Shape): Double = when (shape) {
+    is Circle -> Math.PI * shape.radius * shape.radius
+    is Rectangle -> shape.w * shape.h
+    Unknown -> 0.0
+}
+
+// --- Map & Set structures ---
+val demoMap = mapOf("A" to 1, "B" to 2)
+val mutableMap = mutableMapOf("X" to 10)
+mutableMap["Y"] = 20
+
+val demoSet = setOf(1, 2, 3)
+val mutableSet = mutableSetOf("Red", "Green")
+mutableSet.add("Blue")
+
+// --- Iterating Maps & Sets ---
+for ((key, value) in demoMap) {
+    println("$key -> $value")
+}
+
+demoSet.forEachIndexed { index, value ->
+    println("Set[$index] = $value")
+}
+
+// --- Pair & Triple ---
+val pair = Pair("Alice", 25)
+val triple = Triple("Bob", "Developer", 5000)
+
+// --- Extensions ---
+fun String.shout(): String = this.uppercase() + "!"
+println("hello".shout())
+
+// --- Enum class ---
+enum class Direction { NORTH, SOUTH, EAST, WEST }
+
+fun move(dir: Direction) {
+    when (dir) {
+        Direction.NORTH -> println("Going up")
+        Direction.SOUTH -> println("Going down")
+        Direction.EAST  -> println("Going right")
+        Direction.WEST  -> println("Going left")
+    }
+}
+
+// --- Object declaration (Singleton) ---
+object Config {
+    val version = "1.0"
+    fun info() = "System running version $version"
+}
+
+// --- Generics ---
+class Box<T>(val item: T) {
+    fun get(): T = item
+}
+
+val intBox = Box(123)
+val stringBox = Box("Hi!")
+
+// --- Inline functions & lambda usage ---
+inline fun applyTwice(action: () -> Unit) {
+    action()
+    action()
+}
+
+applyTwice { println("Running...") }
+
+// --- Ranges & progressions ---
+for (c in 'a'..'f') println(c)
+for (n in 20 downTo 0 step 5) println(n)
+
+// --- Destructuring ---
+data class Point(val x: Int, val y: Int)
+val (px, py) = Point(10, 20)
+println("X=$px, Y=$py")
+
+// --- Exception handling ---
+try {
+    val risky = 10 / 0
+} catch (e: Exception) {
+    println("Error: ${e.message}")
+} finally {
+    println("Finished!")
+}
+
 */
