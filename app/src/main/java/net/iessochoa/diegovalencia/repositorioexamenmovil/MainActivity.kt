@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import net.iessochoa.diegovalencia.repositorioexamenmovil.listasscrolleables.AffirmationsApp
+import net.iessochoa.diegovalencia.repositorioexamenmovil.navegacionviewmodel.doctorround.DoctorRoundApp
+import net.iessochoa.diegovalencia.repositorioexamenmovil.navegacionviewmodel.propio1.Propio1
 import net.iessochoa.diegovalencia.repositorioexamenmovil.otros.AppChuletaSergio
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tarjetasjuegos.MainScreen
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tarjetaspokemonpropio.composables.DisplayCards
@@ -41,7 +43,7 @@ fun App(
     modifier: Modifier = Modifier
 ){
     // Tema 4
-    TipTimeLayout() // Ejercicio1 - Calculador de propina
+    //TipTimeLayout() // Ejercicio1 - Calculador de propina
     //CalculadoraDisplay() // Ejercicio 3 - Calculadora con iconos
 
     // Tema 5
@@ -53,5 +55,9 @@ fun App(
     //MainScreen() // Cartas de videojuegos con rating
     //AppChuletaSergio("Chuleta Sergio") // Wombo combo de sergio
     //AffirmationsApp() // Afirmaciones google
-    //DisplayCards() // Cartas pokemon Diego
+    // DisplayCards() // Cartas pokemon Diego
+
+    // Navegación y ViewModel
+    // Propio1()
+    //DoctorRoundApp()
 }
