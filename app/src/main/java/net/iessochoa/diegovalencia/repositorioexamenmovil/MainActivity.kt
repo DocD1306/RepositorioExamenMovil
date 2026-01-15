@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import net.iessochoa.diegovalencia.repositorioexamenmovil.listasscrolleables.AffirmationsApp
 import net.iessochoa.diegovalencia.repositorioexamenmovil.navegacionviewmodel.doctorround.DoctorRoundApp
+import net.iessochoa.diegovalencia.repositorioexamenmovil.navegacionviewmodel.oceanseleven.OceansElevenApp
 import net.iessochoa.diegovalencia.repositorioexamenmovil.navegacionviewmodel.propio1.Propio1
 import net.iessochoa.diegovalencia.repositorioexamenmovil.otros.AppChuletaSergio
 import net.iessochoa.diegovalencia.repositorioexamenmovil.tarjetasjuegos.MainScreen
@@ -58,6 +59,7 @@ fun App(
     // DisplayCards() // Cartas pokemon Diego
 
     // Navegación y ViewModel
-    // Propio1()
-    //DoctorRoundApp()
+    // Propio1() // Invent de Diego de Navegacion
+    //DoctorRoundApp() // DoctorRound
+    OceansElevenApp() // Examen
 }

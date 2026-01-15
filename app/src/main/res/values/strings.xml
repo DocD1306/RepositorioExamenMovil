@@ -49,4 +49,6 @@
     <string name="affirmation9">Things will unfold at precisely the right time.</string>
     <string name="affirmation10">I will be present in all the moments that this day brings.</string>
     <string name="title_patient_detail">Patient Detail</string>
+    <string name="order_screen_title">Order Screen</string>
+    <string name="summary_screen_title">Summary Screen</string>
 </resources>
