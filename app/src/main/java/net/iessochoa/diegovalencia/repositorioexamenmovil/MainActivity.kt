@@ -7,23 +7,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import net.iessochoa.diegovalencia.repositorioexamenmovil.listasscrolleables.AffirmationsApp
-import net.iessochoa.diegovalencia.repositorioexamenmovil.navegacionviewmodel.doctorround.DoctorRoundApp
-import net.iessochoa.diegovalencia.repositorioexamenmovil.navegacionviewmodel.oceanseleven.OceansElevenApp
-import net.iessochoa.diegovalencia.repositorioexamenmovil.navegacionviewmodel.oceanseleven2.OceansElevenApp2
-import net.iessochoa.diegovalencia.repositorioexamenmovil.navegacionviewmodel.propio1.Propio1
-import net.iessochoa.diegovalencia.repositorioexamenmovil.otros.AppChuletaSergio
-import net.iessochoa.diegovalencia.repositorioexamenmovil.tarjetasjuegos.MainScreen
-import net.iessochoa.diegovalencia.repositorioexamenmovil.tarjetaspokemonpropio.composables.DisplayCards
-import net.iessochoa.diegovalencia.repositorioexamenmovil.tema4.CalculadoraDisplay
-import net.iessochoa.diegovalencia.repositorioexamenmovil.tema4.TipTimeLayout
-import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.Ejercicio3
-import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.PizzaDisplay
-import net.iessochoa.diegovalencia.repositorioexamenmovil.tema5.SliderColores
+import net.iessochoa.diegovalencia.repositorioexamenmovil.retrofitapis.pcdealguienpropio.ui.PokemonScreen
+import net.iessochoa.diegovalencia.repositorioexamenmovil.retrofitapis.rickymorty.ui.RickScreen
 import net.iessochoa.diegovalencia.repositorioexamenmovil.ui.theme.RepositorioExamenMovilTheme
 
 class MainActivity : ComponentActivity() {
@@ -63,5 +50,10 @@ fun App(
     // Propio1() // Invent de Diego de Navegacion
     //DoctorRoundApp() // DoctorRound
     // OceansElevenApp() // Examen
-    OceansElevenApp2() // Examen con nullables
+    // OceansElevenApp2() // Examen con nullables
+
+    // Retrofit
+    // MarsPhotosApp()
+    // PokemonScreen()
+    RickScreen()
 }
